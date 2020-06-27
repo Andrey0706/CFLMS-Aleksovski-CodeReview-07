@@ -1,0 +1,40 @@
+<div class = "wrapper">
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a class="navbar-brand" href="#">Travel<span id="theX">X</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/blog">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/travel">Travel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+      <li class="nav-item" routerLink="/cart">
+        <img src="../assets/img/cart5.png"><span>{{ noOfItems() }}</span>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Jumbotron starts -->
+
+<div class="jumbotron bg-transparent">
+  <h5 class="display-7">Experience The</h5>
+  <h1 class="display-5" id="bestTrip">Best trip ever</h1>
+  <p class="lead">We are committed to offering travel services of the highest
+  <br> quality, combining our energy and enthusiasm with years of
+  <br>experience</p>
+  <a class="btn btn-lg border-light" routerLink="/contact" role="button">Contact Us</a>
+</div>
+</div>
+</div>

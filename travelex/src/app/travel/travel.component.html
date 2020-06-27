@@ -1,0 +1,29 @@
+ <div class="container">
+            <h1 class="text-center mb-5">Top Destinations</h1>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4" id="mainRow">
+            	
+
+            	<div  *ngFor="let elem of offers; index as index" (click)="addToCart(offers[index])" class="col mb-4" id="{{index}}">
+			    <div class="card loc text-center" (mouseover)="hovereffect(index)" (mouseleave)="removeHover(index)">
+
+			        <div class="imgContainer">
+			            <img src="{{elem.img}}" class="card-img-top" alt="..." />
+			        </div>
+			        <div class="card-above pb-3">
+			        	<h6 class="card-title pb-0 mb-0"><i class="fas fa-map-marker-alt" style="font-size: 16px;">&nbsp;&nbsp;&nbsp;{{elem.destination}}</i></h6>
+			            <span class="card-title" style="font-size: 19px; font-weight: bold;">{{elem.name}}</span><span *ngFor="let y of starsArray(index)">&#11088;</span>
+			        </div>
+			        <div class="card-body py-0 text-left">
+			        	<p class="card-text"><span><i>From:</i></span> {{elem.from}}</p>
+			        	<p class="card-text"><span><i>Duration:</i></span> {{elem.duration}} nights</p>
+			            <p class="card-text"><span><i>Board:</i></span> {{elem.board}}</p>
+			        </div>
+			        <div class="card-footer">
+			            <h3 class="text-light">&euro;{{elem.price}}</h3>
+			        </div>
+			    </div>
+			</div>
+
+            </div>
+        </div>

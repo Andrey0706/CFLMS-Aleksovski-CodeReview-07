@@ -1,0 +1,12 @@
+<div class="container">
+	<div *ngFor="let post of blog;">
+		<p class="text-secondary">Posted on <strong> {{post.postedOn}}  </strong> by <strong>{{post.author}}</strong></p>
+		<h2>{{post.title}}</h2>
+		<div id="imageContainer">
+		<img src="{{post.img}}" alt="">
+		</div>
+		<p>{{post.content}}</p>
+		<hr>
+		<br>
+	</div>
+</div>
